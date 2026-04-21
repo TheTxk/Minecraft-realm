@@ -96,9 +96,9 @@ const CONFIG = {
       alt: "Moody cave scene"
     },
     {
-      title: "Need some wool?",
-      description: "Major lag spike when people came here",
-      image: "Sources/Images-source/Screenshot 2026-03-13 005955.png",
+      title: "The OG migrants",
+      description: "First civilization came, conquer, then left their machines, farms and equipment intact till this day.",
+      image: "Sources/Images-source/Screenshot 2026-04-21 164937.png",
       alt: "Moody cave scene"
     },
     {
