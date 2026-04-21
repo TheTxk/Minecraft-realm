@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Minecraft Realm Server</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="home">
+  <div class="floating-pixels" id="floatingPixels"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="nav-wrap">
+        <div class="brand">
+          <div class="brand-badge"></div>
+          <div><span class="js-server-name">Realm Server</span></div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+
+        <nav class="nav-tabs" id="navTabs" aria-label="Main navigation">
+          <a class="nav-tab" data-page="home" href="index.html">Home</a>
+          <a class="nav-tab" data-page="realm-info" href="realm-info.html">Realm Info</a>
+          <a class="nav-tab" data-page="faq" href="faq.html">FAQ</a>
+          <a class="nav-tab" data-page="about-us" href="about-us.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section>
+        <div class="hero" id="heroCard">
+          <div class="eyebrow">Minecraft Realm Website</div>
+          <h1 class="server-title" id="serverName"></h1>
+          <div class="version" id="serverVersion"></div>
+          <p class="hero-text" id="heroText"></p>
+          <div class="cta-row">
+            <a class="btn btn-primary" id="joinButton" href="#" target="_blank" rel="noopener noreferrer">Join the Server</a>
+            <button class="btn btn-secondary" id="randomTipButton">Show a Random Realm Tip</button>
+          </div>
+          <div class="edit-note">
+            Edit server name, version, button link, photo list, and text inside <strong>script.js</strong>.
+          </div>
+        </div>
+
+        <div class="section-head">
+          <h2>Realm Highlights</h2>
+          <p>
+            A quick visual tour of the builds, adventures, farms, events, and hidden corners of the server.
+            Replace the photos and captions below with your own screenshots.
+          </p>
+        </div>
+
+        <div class="gallery" id="galleryGrid"></div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      Built for your Minecraft realm. Replace the placeholder content with your own server info, links, and screenshots.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

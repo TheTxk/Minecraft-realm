@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Minecraft Realm Server</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="about-us">
+  <div class="floating-pixels" id="floatingPixels"></div>
+
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="nav-wrap">
+        <div class="brand">
+          <div class="brand-badge"></div>
+          <div><span class="js-server-name">Realm Server</span></div>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">Menu</button>
+
+        <nav class="nav-tabs" id="navTabs" aria-label="Main navigation">
+          <a class="nav-tab" data-page="home" href="index.html">Home</a>
+          <a class="nav-tab" data-page="realm-info" href="realm-info.html">Realm Info</a>
+          <a class="nav-tab" data-page="faq" href="faq.html">FAQ</a>
+          <a class="nav-tab" data-page="about-us" href="about-us.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <section>
+        <div class="section-head">
+          <h2>About Us</h2>
+          <p>
+            A little story behind the realm, plus your socials for members and visitors who want to keep up with the community.
+          </p>
+        </div>
+
+        <div class="social-panel">
+          <div class="social-header">
+            <h3>Link to our social</h3>
+            <div class="eyebrow" style="margin: 0;">Click a card to open</div>
+          </div>
+          <div class="social-links" id="socialLinks"></div>
+        </div>
+
+        <div class="story-wrap">
+          <article class="story-card">
+            <h3 style="margin-bottom: 14px;">Our Realm Story</h3>
+            <div id="aboutStory"></div>
+          </article>
+
+          <div class="mini-card-grid">
+            <div class="mini-card">
+              <h3 style="margin-bottom: 12px;">What we love</h3>
+              <p id="aboutSideText"></p>
+              <div class="tag-list" id="tagList"></div>
+            </div>
+
+            <div class="mini-card">
+              <h3 style="margin-bottom: 12px;">Community vibe</h3>
+              <p>
+                Chill building nights, big survival plans, funny disasters, last-minute rescue missions, and way too many
+                “just one more project” moments. Rewrite this however you want.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      Built for your Minecraft realm. Replace the placeholder content with your own server info, links, and screenshots.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
