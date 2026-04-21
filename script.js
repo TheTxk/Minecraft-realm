@@ -20,7 +20,7 @@ const CONFIG = {
     {
       title: "Big boss base",
       description: "Looks like a normal village? No! A true dedicated player has been holding secret resources and power underneath. Either come to trade or do not mess with this guy",
-      image: "Sources/Images-source/IMG_6204.png",
+      image: "Sources/Images-source/Screenshot 2026-04-21 150025.png",
       alt: "Minecraft-style forest landscape"
     },
     {
@@ -57,6 +57,30 @@ const CONFIG = {
       title: "A DOJO????",
       description: "Legend said some master died and left the legendary items.",
       image: "Sources/Images-source/IMG_6210.png",
+      alt: "Green hills and open space"
+    },
+    {
+      title: "A Nether Portal??",
+      description: "This is hard buid ngl.",
+      image: "Sources/Images-source/Screenshot 2026-04-21 145109.png",
+      alt: "Green hills and open space"
+    },
+     {
+      title: "Ahhh YT tutorial build ",
+      description: "kinda impressive for a first home builder",
+      image: "Sources/Images-source/Screenshot 2026-04-21 145513.png",
+      alt: "Green hills and open space"
+    },
+      {
+      title: "Asian style??",
+      description: "Must be a matcha performative guy",
+      image: "Sources/Images-source/Screenshot 2026-04-21 145744.png",
+      alt: "Green hills and open space"
+    },
+     {
+      title: "Another ASIAN builder??",
+      description: "i think these guys like sakura :o",
+      image: "Sources/Images-source/Screenshot 2026-04-21 145901.png",
       alt: "Green hills and open space"
     },
     {
