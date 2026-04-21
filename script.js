@@ -18,6 +18,12 @@ const CONFIG = {
 
   galleryPhotos: [
     {
+      title: "Where it all get started",
+      description: "Messy spawn with gravestone and fallen starters. Shelter is built to support newcomers. Food and tools are inside. Don't miss out!!",
+      image: "Sources/Images-source/Screenshot 2026-04-21 164350.png",
+      alt: "Minecraft-style forest landscape"
+    },
+    {
       title: "Big boss base",
       description: "Looks like a normal village? No! A true dedicated player has been holding secret resources and power underneath. Either come to trade or do not mess with this guy",
       image: "Sources/Images-source/Screenshot 2026-04-21 150025.png",
@@ -26,7 +32,7 @@ const CONFIG = {
     {
       title: "Community village",
       description: "The closest village to spawn. Food and shelter is provided. Please do not hesitate to stay if the first few days are DEADLY!!",
-      image: "Sources/Images-source/IMG_6205.png",
+      image: "Sources/Images-source/Screenshot 2026-04-21 164232.png",
       alt: "Blocky landscape and hills"
     },
     {
@@ -38,13 +44,13 @@ const CONFIG = {
     {
       title: "Medival farmland",
       description: "An clan base far far away. Who knows they have the biggest underground tunnel system.",
-      image: "Sources/Images-source/IMG_6207.png",
+      image: "Sources/Images-source/Screenshot 2026-04-21 164529.png",
       alt: "mns baset"
     },
     {
       title: "A Town or a city?",
       description: "Looks like a lovely and developed town.",
-      image: "Sources/Images-source/IMG_6208.png",
+      image: "Sources/Images-source/Screenshot 2026-04-21 164643.png",
       alt: "Dark fantasy style game scene"
     },
     {
@@ -56,7 +62,7 @@ const CONFIG = {
     {
       title: "A DOJO????",
       description: "Legend said some master died and left the legendary items.",
-      image: "Sources/Images-source/IMG_6210.png",
+      image: "Sources/Images-source/Screenshot 2026-04-21 164748.png",
       alt: "Green hills and open space"
     },
     {
@@ -90,9 +96,15 @@ const CONFIG = {
       alt: "Moody cave scene"
     },
     {
-      title: "Original Migrants",
-      description: "The most OG player built there based here with building, farms, machines and various equipment left behind.",
-      image: "Sources/Images-source/IMG_6212.png",
+      title: "Need some wool?",
+      description: "Major lag spike when people came here",
+      image: "Sources/Images-source/Screenshot 2026-03-13 005955.png",
+      alt: "Moody cave scene"
+    },
+    {
+      title: "Unfinished empire",
+      description: "A prince was killed before he became the KING, lost ender egg was stolen and lost as a result",
+      image: "Sources/Images-source/Screenshot 2026-04-21 165029.png",
       alt: "Ocean and sky view"
     },
     {
@@ -194,7 +206,7 @@ const CONFIG = {
     },
     {
       question: "What happens if I go inactive?",
-      answer: "Dont inactive for afk farm. Safe server resources. Be sustainably friendly!!!"
+      answer: "Dont inactive for afk farm. Save server resources. Be sustainably friendly!!!"
     },
     {
       question: "Is PvP on?",
