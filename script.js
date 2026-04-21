@@ -20,61 +20,61 @@ const CONFIG = {
     {
       title: "Spawn Hub",
       description: "A warm first look at the server with pathways, signs, and a welcoming build style.",
-      image: "Sources/Images-source/IMG_6204.heic",
+      image: "Sources/Images-source/IMG_6204.png",
       alt: "Minecraft-style forest landscape"
     },
     {
       title: "Community Town",
       description: "Show your main streets, shops, storage area, and any town center landmarks here.",
-      image: "Sources/Images-source/IMG_6205.heic",
+      image: "Sources/Images-source/IMG_6205.png",
       alt: "Blocky landscape and hills"
     },
     {
       title: "Mega Build Zone",
       description: "Perfect spot for your biggest project, castle, base, monument, or city progress shots.",
-      image: "Sources/Images-source/IMG_6206.heic",
+      image: "Sources/Images-source/IMG_6206.png",
       alt: "Mountain valley inspired gaming environment"
     },
     {
       title: "Farms & Redstone",
       description: "Use this card for your auto farms, sorting systems, or other smart survival setups.",
-      image: "Sources/Images-source/IMG_6207.heic",
+      image: "Sources/Images-source/IMG_6207.png",
       alt: "Creative game scene with warm light"
     },
     {
       title: "Nether Route",
       description: "Show off your safe tunnels, portals, highway system, or dramatic lava-side builds.",
-      image: "Sources/Images-source/IMG_6208.heic",
+      image: "Sources/Images-source/IMG_6208.png",
       alt: "Dark fantasy style game scene"
     },
     {
       title: "Event Arena",
       description: "Great for PvP arenas, race tracks, mini-games, or seasonal community competitions.",
-      image: "Sources/Images-source/IMG_6209.heic",
+      image: "Sources/Images-source/IMG_6209.png",
       alt: "Arena style game environment"
     },
     {
       title: "Nature District",
       description: "A calmer area for scenic builds, cabins, bridges, and landscaping work.",
-      image: "Sources/Images-source/IMG_6210.heic",
+      image: "Sources/Images-source/IMG_6210.png",
       alt: "Green hills and open space"
     },
     {
       title: "Underground Base",
       description: "Perfect for cave systems, underground halls, secret rooms, or mining headquarters.",
-      image: "Sources/Images-source/IMG_6211.heic",
+      image: "Sources/Images-source/IMG_6211.png",
       alt: "Moody cave scene"
     },
     {
       title: "Ocean Project",
       description: "Use this one for harbors, sea temples, ocean bases, or giant bridge screenshots.",
-      image: "Sources/Images-source/IMG_6212.heic",
+      image: "Sources/Images-source/IMG_6212.png",
       alt: "Ocean and sky view"
     },
     {
       title: "Member Showcase",
-      description: "Highlight a member build, collab project, or a fun moment from the community.",
-      image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+      description: "Highlight a fun moment from the community.",
+      image: "Sources/Images-source/sunset.png",
       alt: "Sunset landscape"
     }
   ],
@@ -98,8 +98,8 @@ const CONFIG = {
       title: "Update Patch",
       nested: [
         {
-          title: "Current Version",
-          content: "Removed Soundscape++ and Java Chicken, server mod optimised by almost 35%"
+          title: "Server mod optimised by almost 35%",
+          content: "Removed Soundscape++ and Java Chicken"
         }
       ]
     },
