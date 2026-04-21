@@ -2,9 +2,9 @@
    EDIT ALL CONTENT HERE
    ===================================================== */
 const CONFIG = {
-  serverName: "Your Realm Name Here", // CHANGE THIS
-  serverVersion: "Minecraft Version: 1.21.x", // CHANGE THIS
-  joinLink: "#", // CHANGE THIS TO YOUR REAL LINK
+  serverName: "2026.2 Meinkaft", // CHANGE THIS
+  serverVersion: "@26.13", // CHANGE THIS
+  joinLink: "realms.gg/As6BHL8KsGobpAQ", // CHANGE THIS TO YOUR REAL LINK
   heroText:
     "Welcome to our realm — a place for big builds, relaxed survival, community events, exploration, and chaotic late-night ideas that somehow become full projects.",
 
@@ -20,55 +20,55 @@ const CONFIG = {
     {
       title: "Spawn Hub",
       description: "A warm first look at the server with pathways, signs, and a welcoming build style.",
-      image: "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6204.heic",
       alt: "Minecraft-style forest landscape"
     },
     {
       title: "Community Town",
       description: "Show your main streets, shops, storage area, and any town center landmarks here.",
-      image: "https://images.unsplash.com/photo-1627855435405-bf0b2adf13c4?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6205.heic",
       alt: "Blocky landscape and hills"
     },
     {
       title: "Mega Build Zone",
       description: "Perfect spot for your biggest project, castle, base, monument, or city progress shots.",
-      image: "https://images.unsplash.com/photo-1622495890500-bbe37fc66516?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6206.heic",
       alt: "Mountain valley inspired gaming environment"
     },
     {
       title: "Farms & Redstone",
       description: "Use this card for your auto farms, sorting systems, or other smart survival setups.",
-      image: "https://images.unsplash.com/photo-1632932197818-6e6b0daddc1f?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6207.heic",
       alt: "Creative game scene with warm light"
     },
     {
       title: "Nether Route",
       description: "Show off your safe tunnels, portals, highway system, or dramatic lava-side builds.",
-      image: "https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6208.heic",
       alt: "Dark fantasy style game scene"
     },
     {
       title: "Event Arena",
       description: "Great for PvP arenas, race tracks, mini-games, or seasonal community competitions.",
-      image: "https://images.unsplash.com/photo-1602673221577-0b56d7ce446b?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6209.heic",
       alt: "Arena style game environment"
     },
     {
       title: "Nature District",
       description: "A calmer area for scenic builds, cabins, bridges, and landscaping work.",
-      image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6210.heic",
       alt: "Green hills and open space"
     },
     {
       title: "Underground Base",
       description: "Perfect for cave systems, underground halls, secret rooms, or mining headquarters.",
-      image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6211.heic",
       alt: "Moody cave scene"
     },
     {
       title: "Ocean Project",
       description: "Use this one for harbors, sea temples, ocean bases, or giant bridge screenshots.",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80",
+      image: "Images-source/IMG_6212.heic",
       alt: "Ocean and sky view"
     },
     {
@@ -85,28 +85,21 @@ const CONFIG = {
       content: `
         <p><strong>Edit this block with your own server specs.</strong></p>
         <ul>
-          <li>Host / platform: write it here</li>
-          <li>Region / ping notes: write it here</li>
-          <li>Player capacity: write it here</li>
-          <li>Difficulty / gameplay style: write it here</li>
-          <li>Backup or reset policy: write it here</li>
+          <li>Host / platform: Minecraft Bedrock / MCPE / Minecraft for XBOX and PC</li>
+          <li>Region / ping notes: Singapore ( 50ms VIE, 90ms AUS )</li>
+          <li>Version: 26.13 - updated April 26
+          <li>Player capacity: 11 players max</li>
+          <li>Difficulty / gameplay style: Hardmode Survival with basic mods</li>
+          <li>Joining constraints: Download mod pack ~30MB</li>
         </ul>
       `
     },
     {
-      title: "Update Path",
+      title: "Update Patch",
       nested: [
         {
           title: "Current Version",
-          content: "Write the current version details here. Example: Running 1.21.x with plans to update after testing mod compatibility."
-        },
-        {
-          title: "Planned Features",
-          content: "Write the next planned changes here. Example: new district, spawn update, more events, better member transport, or economy tweaks."
-        },
-        {
-          title: "Past Major Updates",
-          content: "Write your update history here. Example: Season launch, map expansion, new shopping district, boss arena release, performance cleanup."
+          content: "Removed Soundscape++ and Java Chicken, server mod optimised by almost 35%"
         }
       ]
     },
@@ -114,17 +107,22 @@ const CONFIG = {
       title: "Mod Info",
       nested: [
         {
-          title: "Required Mods",
-          content: "List any mods or client-side requirements here. Example: None required / Fabric loader / performance mods allowed / shader optional."
+          title: "Naturalist 26.1",
+          content: "Expand the animal kingdom around the realm. Current size: 29.4MB"
         },
         {
-          title: "Quality of Life Mods",
-          content: "Write your approved quality-of-life mods here. Example: map, voice chat, inventory sorting, minimap, shaders, replay tools."
+          title: "Health Bars Add-On",
+          content: "Adjustable visibility of hp of players and entities. Current size: 0.03MB"
         },
         {
-          title: "Rules on Mods",
-          content: "Write server rules about mods here. Example: no unfair combat mods, x-ray banned, automation limits, ask admins before adding tools."
+          title: "Gravestone Add-On",
+          content: "Dead player will spawn a gravestone storing player's inventory. Current size 0.12MB"
+        },
+         {
+          title: "Epic Helpers Resources",
+          content: "Helping in farm, defence, minding and casting magic. Current size: 0.57MB"
         }
+         
       ]
     },
     {
@@ -132,15 +130,11 @@ const CONFIG = {
       nested: [
         {
           title: "Admins",
-          content: "Add the admin list here with roles. Example: Owner, builder lead, event host, technical admin, moderation support."
+          content: "Tunxk & Dawnes13"
         },
         {
           title: "Members",
-          content: "Add member info here. Example: active players, builders, redstone players, explorers, casual members, event regulars."
-        },
-        {
-          title: "How to Join",
-          content: "Explain your join process here. Example: invited by admin, application form, Discord intro, read rules, then receive realm link."
+          content: "Check on realm story"
         }
       ]
     }
@@ -149,27 +143,27 @@ const CONFIG = {
   faq: [
     {
       question: "How do I join the realm?",
-      answer: "Replace this answer with your real process. Example: click the join link, message an admin, and read the rules before entering the main area."
+      answer: "Click on Join now button in main page"
     },
     {
       question: "What version do I need?",
-      answer: "Replace this answer with the exact version number and any mod loader details if needed."
+      answer: "latest. Always latest"
     },
     {
       question: "Are mods allowed?",
-      answer: "Write your mod policy here. Example: client-side visual mods allowed, anything unfair or exploit-based is not allowed."
+      answer: "Mod in realm mod only"
     },
     {
       question: "Can I build anywhere?",
-      answer: "Write your building rules here. Example: ask before building near spawn, leave room around other projects, and label shared structures."
+      answer: "Technically yes. Just dont destroy others work"
     },
     {
       question: "What happens if I go inactive?",
-      answer: "Write your inactivity rules here. Example: totally fine for casual members, but abandoned areas may be cleaned up after a long time if needed."
+      answer: "Dont inactive for afk farm. Safe server resources. Be sustainably friendly!!!"
     },
     {
       question: "Is PvP on?",
-      answer: "Write your PvP policy here. Example: only in event zones or with mutual agreement."
+      answer: "Always! War is not forbidden."
     }
   ],
 
@@ -178,19 +172,19 @@ const CONFIG = {
       name: "YouTube",
       short: "YT",
       subtext: "Videos, tours, updates",
-      link: "#"
+      link: "https://www.youtube.com/@dawnesluminus"
     },
     {
       name: "Discord",
       short: "DC",
-      subtext: "Community chat, announcements",
-      link: "#"
+      subtext: "Private chat",
+      link: "https://discord.gg/rzng495S"
     },
     {
       name: "Roblox",
       short: "RB",
-      subtext: "Extra community link",
-      link: "#"
+      subtext: "Roblox community",
+      link: "https://www.roblox.com/share/g/16819432"
     }
   ],
 
@@ -202,7 +196,7 @@ const CONFIG = {
   aboutSideText:
     "We enjoy community projects, memorable survival moments, creative builds, structured progression, and making the realm feel like a world with its own history.",
 
-  tags: ["Survival", "Community", "Events", "Mega Builds", "Exploration", "Friendly Chaos"]
+  tags: ["Survival", "Community", "Exploration"]
 };
 
 /* =====================================================
