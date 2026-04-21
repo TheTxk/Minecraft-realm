@@ -20,55 +20,55 @@ const CONFIG = {
     {
       title: "Spawn Hub",
       description: "A warm first look at the server with pathways, signs, and a welcoming build style.",
-      image: "Images-source/IMG_6204.heic",
+      image: "Sources/Images-source/IMG_6204.heic",
       alt: "Minecraft-style forest landscape"
     },
     {
       title: "Community Town",
       description: "Show your main streets, shops, storage area, and any town center landmarks here.",
-      image: "Images-source/IMG_6205.heic",
+      image: "Sources/Images-source/IMG_6205.heic",
       alt: "Blocky landscape and hills"
     },
     {
       title: "Mega Build Zone",
       description: "Perfect spot for your biggest project, castle, base, monument, or city progress shots.",
-      image: "Images-source/IMG_6206.heic",
+      image: "Sources/Images-source/IMG_6206.heic",
       alt: "Mountain valley inspired gaming environment"
     },
     {
       title: "Farms & Redstone",
       description: "Use this card for your auto farms, sorting systems, or other smart survival setups.",
-      image: "Images-source/IMG_6207.heic",
+      image: "Sources/Images-source/IMG_6207.heic",
       alt: "Creative game scene with warm light"
     },
     {
       title: "Nether Route",
       description: "Show off your safe tunnels, portals, highway system, or dramatic lava-side builds.",
-      image: "Images-source/IMG_6208.heic",
+      image: "Sources/Images-source/IMG_6208.heic",
       alt: "Dark fantasy style game scene"
     },
     {
       title: "Event Arena",
       description: "Great for PvP arenas, race tracks, mini-games, or seasonal community competitions.",
-      image: "Images-source/IMG_6209.heic",
+      image: "Sources/Images-source/IMG_6209.heic",
       alt: "Arena style game environment"
     },
     {
       title: "Nature District",
       description: "A calmer area for scenic builds, cabins, bridges, and landscaping work.",
-      image: "Images-source/IMG_6210.heic",
+      image: "Sources/Images-source/IMG_6210.heic",
       alt: "Green hills and open space"
     },
     {
       title: "Underground Base",
       description: "Perfect for cave systems, underground halls, secret rooms, or mining headquarters.",
-      image: "Images-source/IMG_6211.heic",
+      image: "Sources/Images-source/IMG_6211.heic",
       alt: "Moody cave scene"
     },
     {
       title: "Ocean Project",
       description: "Use this one for harbors, sea temples, ocean bases, or giant bridge screenshots.",
-      image: "Images-source/IMG_6212.heic",
+      image: "Sources/Images-source/IMG_6212.heic",
       alt: "Ocean and sky view"
     },
     {
