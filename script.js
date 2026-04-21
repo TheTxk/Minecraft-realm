@@ -103,7 +103,7 @@ const CONFIG = {
     },
     {
       title: "Unfinished empire",
-      description: "A prince was killed before he became the KING, lost ender egg was stolen and lost as a result",
+      description: "A prince was killed before he became the KING. Owner of the legendary Ender Egg vanished and was never seen once again",
       image: "Sources/Images-source/Screenshot 2026-04-21 165029.png",
       alt: "Ocean and sky view"
     },
