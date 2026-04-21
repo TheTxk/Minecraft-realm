@@ -4,7 +4,7 @@
 const CONFIG = {
   serverName: "2026.2 Meinkaft", // CHANGE THIS
   serverVersion: "@26.13", // CHANGE THIS
-  joinLink: "https://thetxk.github.io/Minecraft-realm/index.html", 
+  joinLink: "https://www.minecraft.net/en-us/open?inviteCode=As6BHL8KsGobpAQ", 
   heroText:
     "Welcome to our realm — a place for big builds, relaxed survival, community events, exploration, and chaotic late-night ideas that somehow become full projects.",
 
