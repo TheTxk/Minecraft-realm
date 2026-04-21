@@ -369,7 +369,6 @@ function buildHomePage() {
       card.innerHTML = `
         <div class="gallery-image">
           <img src="${photo.image}" alt="${photo.alt}">
-          <div class="photo-label">Photo ${index + 1}</div>
         </div>
         <div class="gallery-copy">
           <h3>${photo.title}</h3>
