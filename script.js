@@ -100,6 +100,9 @@ const CONFIG = {
         {
           title: "Server mod optimised by almost 35%",
           content: "Removed Soundscape++ and Java Chicken"
+        },
+        {
+          title: "Refresh server March"
         }
       ]
     },
