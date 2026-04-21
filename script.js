@@ -18,62 +18,62 @@ const CONFIG = {
 
   galleryPhotos: [
     {
-      title: "Spawn Hub",
-      description: "A warm first look at the server with pathways, signs, and a welcoming build style.",
+      title: "Big boss base",
+      description: "Looks like a normal village? No! A true dedicated player has been holding secret resources and power underneath. Either come to trade or do not mess with this guy",
       image: "Sources/Images-source/IMG_6204.png",
       alt: "Minecraft-style forest landscape"
     },
     {
-      title: "Community Town",
-      description: "Show your main streets, shops, storage area, and any town center landmarks here.",
+      title: "Community village",
+      description: "The closest village to spawn. Food and shelter is provided. Please do not hesitate to stay if the first few days are DEADLY!!",
       image: "Sources/Images-source/IMG_6205.png",
       alt: "Blocky landscape and hills"
     },
     {
-      title: "Mega Build Zone",
-      description: "Perfect spot for your biggest project, castle, base, monument, or city progress shots.",
-      image: "Sources/Images-source/IMG_6206.png",
+      title: "Farming???",
+      description: "Oil rig?? Mobs rig? WHO KNOWS!!",
+      image: "Sources/Images-source/Screenshot 2024-03-21 210457.png",
       alt: "Mountain valley inspired gaming environment"
     },
     {
-      title: "Farms & Redstone",
-      description: "Use this card for your auto farms, sorting systems, or other smart survival setups.",
+      title: "Medival farmland",
+      description: "An clan base far far away. Who knows they have the biggest underground tunnel system.",
       image: "Sources/Images-source/IMG_6207.png",
-      alt: "Creative game scene with warm light"
+      alt: "mns baset"
     },
     {
-      title: "Nether Route",
-      description: "Show off your safe tunnels, portals, highway system, or dramatic lava-side builds.",
+      title: "A Town or a city?",
+      description: "Looks like a lovely and developed town.",
       image: "Sources/Images-source/IMG_6208.png",
       alt: "Dark fantasy style game scene"
     },
     {
-      title: "Event Arena",
-      description: "Great for PvP arenas, race tracks, mini-games, or seasonal community competitions.",
-      image: "Sources/Images-source/IMG_6209.png",
-      alt: "Arena style game environment"
+      title: "Do not forget the other world",
+      description: "'No comment here' - admin ",
+      image: "Sources/Images-source/Screenshot 2024-06-07 040739.png",
+      alt: "i died"
     },
     {
-      title: "Nature District",
-      description: "A calmer area for scenic builds, cabins, bridges, and landscaping work.",
+      title: "A DOJO????",
+      description: "Legend said some master died and left the legendary items.",
       image: "Sources/Images-source/IMG_6210.png",
       alt: "Green hills and open space"
     },
     {
-      title: "Underground Base",
-      description: "Perfect for cave systems, underground halls, secret rooms, or mining headquarters.",
-      image: "Sources/Images-source/IMG_6211.png",
+      title: "Need some wool?",
+      description: "Major lag spike when people came here",
+      image: "Sources/Images-source/Screenshot 2026-03-13 005955.png",
       alt: "Moody cave scene"
     },
     {
-      title: "Ocean Project",
-      description: "Use this one for harbors, sea temples, ocean bases, or giant bridge screenshots.",
+      title: "Original Migrants",
+      description: "The most OG player built there based here with building, farms, machines and various equipment left behind.",
       image: "Sources/Images-source/IMG_6212.png",
       alt: "Ocean and sky view"
     },
     {
-      title: "Member Showcase",
-      description: "Highlight a fun moment from the community.",
+      title: "Big name of the season",
+      description: "Shout out to longest serving slav.. I mean working players.",
       image: "Sources/Images-source/sunset.png",
       alt: "Sunset landscape"
     }
@@ -83,7 +83,7 @@ const CONFIG = {
     {
       title: "Server Specs",
       content: `
-        <p><strong>Edit this block with your own server specs.</strong></p>
+        <p><strong>Server specifications:</strong></p>
         <ul>
           <li>Host / platform: Minecraft Bedrock / MCPE / Minecraft for XBOX and PC</li>
           <li>Region / ping notes: Singapore ( 50ms VIE, 90ms AUS )</li>
@@ -121,6 +121,10 @@ const CONFIG = {
          {
           title: "Epic Helpers Resources",
           content: "Helping in farm, defence, minding and casting magic. Current size: 0.57MB"
+        },
+                  {
+          title: "Other mobs",
+          content: "Coming soon"
         }
          
       ]
@@ -135,7 +139,11 @@ const CONFIG = {
         {
           title: "Members",
           content: "Check on realm story"
+        },
+        {
+          title: "Note: all member must be log on realm stories"
         }
+
       ]
     }
   ],
