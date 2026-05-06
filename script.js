@@ -48,8 +48,8 @@ const CONFIG = {
       alt: "mns baset"
     },
     {
-      title: "A Town or a city?",
-      description: "Looks like a lovely and developed town.",
+      title: "The longest civilization",
+      description: "They said the people who passed 5000 days still live here",
       image: "Sources/Images-source/Screenshot 2026-04-21 164643.png",
       alt: "Dark fantasy style game scene"
     },
