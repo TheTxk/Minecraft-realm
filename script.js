@@ -1,6 +1,3 @@
-/* =====================================================
-   EDIT ALL CONTENT HERE
-   ===================================================== */
 const CONFIG = {
   serverName: "2026.2 Meinkaft", // CHANGE THIS
   serverVersion: "@26.13", // CHANGE THIS
