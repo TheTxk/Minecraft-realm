@@ -120,7 +120,7 @@ const CONFIG = {
         <ul>
           <li>Host / platform: Minecraft Bedrock / MCPE / Minecraft for XBOX and PC</li>
           <li>Region / ping notes: Singapore ( 50ms VIE, 90ms AUS )</li>
-          <li>Version: 26.13 - updated April 26
+          <li>Version: v26.20 - updated May 7
           <li>Player capacity: 11 players max</li>
           <li>Difficulty / gameplay style: Hardmode Survival with basic mods</li>
           <li>Joining constraints: Download mod pack ~30MB</li>
