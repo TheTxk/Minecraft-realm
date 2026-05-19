@@ -154,10 +154,6 @@ const CONFIG = {
           title: "Gravestone Add-On",
           content: "Dead player will spawn a gravestone storing player's inventory. Current size 0.12MB"
         },
-         {
-          title: "Epic Helpers Resources",
-          content: "Helping in farm, defence, minding and casting magic. Current size: 0.57MB"
-        },
                   {
           title: "Other mobs",
           content: "Coming soon"
