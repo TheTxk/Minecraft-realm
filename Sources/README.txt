@@ -3,6 +3,7 @@ Minecraft Realm Static Website
 Files:
 - index.html          -> Home page
 - realm-info.html     -> Realm info page
+- mods.html           -> Current mods and details
 - faq.html            -> FAQ page
 - about-us.html       -> About us page
 - style.css           -> All styling
@@ -16,6 +17,7 @@ Edit guide:
    - serverVersion
    - joinLink
    - galleryPhotos
+   - mods (name, version, sizeMB, description)
    - realmInfo
    - faq
    - socials
@@ -29,3 +31,12 @@ Photo note:
 Run:
 - Put all files in the same folder
 - Open index.html in a browser
+
+Mods:
+- Edit CONFIG.mods in script.js to keep the list aligned with the realm.
+- Add or remove an object for each enabled mod.
+- Leave version empty if it is not recorded; the page shows "Not specified".
+- sizeMB is the download size in megabytes.
+- The initial entries come from the existing Realm Info content.
+- Removed mods and "Coming soon" placeholders are not included.
+- This is an admin-maintained list, not a live connection to the Minecraft server.
