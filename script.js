@@ -112,6 +112,29 @@ const CONFIG = {
     }
   ],
 
+  // Keep this list aligned with the add-ons enabled on the realm.
+  // Use an empty version when the installed version is not recorded.
+  mods: [
+    {
+      name: "Naturalist",
+      version: "26.1",
+      sizeMB: 29.4,
+      description: "Expands the animal kingdom around the realm."
+    },
+    {
+      name: "Health Bars Add-On",
+      version: "",
+      sizeMB: 0.03,
+      description: "Shows the health of players and entities with adjustable visibility."
+    },
+    {
+      name: "Gravestone Add-On",
+      version: "",
+      sizeMB: 0.12,
+      description: "Spawns a gravestone when a player dies, storing their inventory."
+    }
+  ],
+
   realmInfo: [
     {
       title: "Server Specs",
@@ -141,25 +164,7 @@ const CONFIG = {
     },
     {
       title: "Mod Info",
-      nested: [
-        {
-          title: "Naturalist 26.1",
-          content: "Expand the animal kingdom around the realm. Current size: 29.4MB"
-        },
-        {
-          title: "Health Bars Add-On",
-          content: "Adjustable visibility of hp of players and entities. Current size: 0.03MB"
-        },
-        {
-          title: "Gravestone Add-On",
-          content: "Dead player will spawn a gravestone storing player's inventory. Current size 0.12MB"
-        },
-                  {
-          title: "Other mobs",
-          content: "Coming soon"
-        }
-         
-      ]
+      content: '<p>See our <a href="mods.html">Mods page</a> for the current mod list, descriptions, versions, and download sizes.</p>'
     },
     {
       title: "Admin and Member",
@@ -417,6 +422,53 @@ function buildRealmInfoPage() {
   enableAccordions(document);
 }
 
+function buildModsPage() {
+  const list = document.getElementById('modsList');
+  const count = document.getElementById('modsCount');
+  if (!list) return;
+
+  list.replaceChildren();
+  if (count) {
+    count.textContent = CONFIG.mods.length + (CONFIG.mods.length === 1 ? ' mod listed' : ' mods listed');
+  }
+
+  if (!CONFIG.mods.length) {
+    const empty = document.createElement('li');
+    empty.className = 'mini-card';
+    empty.textContent = 'No mods are currently listed. Check back for updates from the realm admins.';
+    list.appendChild(empty);
+    return;
+  }
+
+  CONFIG.mods.forEach(mod => {
+    const item = document.createElement('li');
+    item.className = 'mini-card mod-card';
+
+    const title = document.createElement('h3');
+    title.textContent = mod.name;
+    const description = document.createElement('p');
+    description.textContent = mod.description;
+    const details = document.createElement('dl');
+    details.className = 'mod-details';
+
+    [
+      ['Version', mod.version || 'Not specified'],
+      ['Download size', mod.sizeMB + ' MB']
+    ].forEach(([label, value]) => {
+      const group = document.createElement('div');
+      const term = document.createElement('dt');
+      term.textContent = label;
+      const definition = document.createElement('dd');
+      definition.textContent = value;
+      group.append(term, definition);
+      details.appendChild(group);
+    });
+
+    item.append(title, description, details);
+    list.appendChild(item);
+  });
+}
+
 function buildFaqPage() {
   const container = document.getElementById('faqAccordion');
   if (!container) return;
@@ -484,6 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const page = document.body.dataset.page;
   if (page === 'home') buildHomePage();
   if (page === 'realm-info') buildRealmInfoPage();
+  if (page === 'mods') buildModsPage();
   if (page === 'faq') buildFaqPage();
   if (page === 'about-us') buildAboutPage();
 });
