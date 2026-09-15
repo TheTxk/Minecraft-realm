@@ -112,27 +112,65 @@ const CONFIG = {
     }
   ],
 
-  // Keep this list aligned with the add-ons enabled on the realm.
-  // Use an empty version when the installed version is not recorded.
+  // Installed Bedrock add-ons, confirmed by the realm owner.
+  // Version is the installed version, not necessarily the latest Marketplace release.
   mods: [
-    {
-      name: "Naturalist",
-      version: "26.1",
-      sizeMB: 29.4,
-      description: "Expands the animal kingdom around the realm."
-    },
-    {
-      name: "Health Bars Add-On",
-      version: "",
-      sizeMB: 0.03,
-      description: "Shows the health of players and entities with adjustable visibility."
-    },
-    {
-      name: "Gravestone Add-On",
-      version: "",
-      sizeMB: 0.12,
-      description: "Spawns a gravestone when a player dies, storing their inventory."
-    }
+      {
+          "name": "Quests & Challenges Add-on",
+          "version": "",
+          "creator": "Pixel Squared",
+          "category": "Quests & rewards",
+          "description": "Adds daily quests and challenges to survival, with loot rewards and collectible trophies for completing objectives.",
+          "sourceUrl": "https://chunk.gg/en/@pixel-squared/quests-and-challenges"
+      },
+      {
+          "name": "Naturalist Add-on",
+          "version": "26.1.2",
+          "creator": "Starfish Studios",
+          "category": "Wildlife",
+          "description": "Brings new animals to the world, filling biomes with wildlife such as capybaras, giraffes, and vultures.",
+          "sourceUrl": "https://starfishstudios.com/projects/naturalist"
+      },
+      {
+          "name": "Villager News Add-on",
+          "version": "1.0",
+          "creator": "Oreville Studios & Element Animation",
+          "category": "Villagers & immersion",
+          "description": "Gives villagers voiced reactions, expressive animations, and dialogue that responds to the world around them. Includes reputation, gossip, and special characters with unique trades.",
+          "sourceUrl": "https://orevillestudios.com/villager-news"
+      },
+      {
+          "name": "Eternal End Add-on",
+          "version": "",
+          "creator": "Panascais",
+          "category": "End exploration",
+          "description": "Reimagines the End with six biomes, new terrain and structures, blocks, equipment, creatures, and a boss encounter.",
+          "sourceUrl": "https://panascais.net/games/eternal-end"
+      },
+      {
+          "name": "Gravestone Add-on",
+          "version": "",
+          "creator": "Darkosto",
+          "category": "Inventory recovery",
+          "description": "Stores your gear in a gravestone when you die so you can return to recover it.",
+          "sourceUrl": "https://chunk.gg/en/@darkosto/gravestone"
+      },
+      {
+          "name": "Health Bars Add-on",
+          "version": "",
+          "creator": "Oreville Studios",
+          "category": "Combat information",
+          "description": "Displays health bars for mobs and players, with damage indicators and configurable visibility settings to help you judge a fight.",
+          "sourceUrl": "https://guides.orevillestudios.com/health-bars"
+      },
+      {
+          "name": "EpicHelpers Add-on",
+          "version": "",
+          "creator": "Box Build",
+          "category": "Survival helpers",
+          "description": "Adds helpful companions for mining, farming, and combat, including a fighter, miner, farmer, and spellcasting mage.",
+          "sourceUrl": "https://chunk.gg/en/@box-build/epic-helpers"
+      }
   ],
 
   realmInfo: [
@@ -146,7 +184,7 @@ const CONFIG = {
           <li>Version: v26.20 - updated May 7
           <li>Player capacity: 11 players max</li>
           <li>Difficulty / gameplay style: Hardmode Survival with basic mods</li>
-          <li>Joining constraints: Download mod pack ~30MB</li>
+          <li>Joining requirements: Download the realm's enabled add-on packs when prompted</li>
         </ul>
       `
     },
@@ -164,7 +202,7 @@ const CONFIG = {
     },
     {
       title: "Mod Info",
-      content: '<p>See our <a href="mods.html">Mods page</a> for the current mod list, descriptions, versions, and download sizes.</p>'
+      content: '<p>See our <a href="mods.html">Mods page</a> for the current Bedrock add-on list, descriptions, creators, and recorded versions.</p>'
     },
     {
       title: "Admin and Member",
@@ -429,13 +467,13 @@ function buildModsPage() {
 
   list.replaceChildren();
   if (count) {
-    count.textContent = CONFIG.mods.length + (CONFIG.mods.length === 1 ? ' mod listed' : ' mods listed');
+    count.textContent = CONFIG.mods.length + (CONFIG.mods.length === 1 ? ' add-on enabled' : ' add-ons enabled');
   }
 
   if (!CONFIG.mods.length) {
     const empty = document.createElement('li');
     empty.className = 'mini-card';
-    empty.textContent = 'No mods are currently listed. Check back for updates from the realm admins.';
+    empty.textContent = 'No add-ons are currently listed. Check back for updates from the realm admins.';
     list.appendChild(empty);
     return;
   }
@@ -445,15 +483,19 @@ function buildModsPage() {
     item.className = 'mini-card mod-card';
 
     const title = document.createElement('h3');
-    title.textContent = mod.name;
+    title.textContent = mod.version
+      ? mod.name.replace(' Add-on', ' ' + mod.version + ' Add-on')
+      : mod.name;
     const description = document.createElement('p');
     description.textContent = mod.description;
     const details = document.createElement('dl');
     details.className = 'mod-details';
 
     [
-      ['Version', mod.version || 'Not specified'],
-      ['Download size', mod.sizeMB + ' MB']
+      ['Creator', mod.creator],
+      ['Category', mod.category],
+      ['Installed version', mod.version || 'Not specified'],
+      ['Edition', 'Minecraft Bedrock']
     ].forEach(([label, value]) => {
       const group = document.createElement('div');
       const term = document.createElement('dt');
@@ -464,7 +506,12 @@ function buildModsPage() {
       details.appendChild(group);
     });
 
-    item.append(title, description, details);
+    const source = document.createElement('a');
+    source.className = 'mod-source';
+    source.href = mod.sourceUrl;
+    source.textContent = 'About this add-on';
+    source.setAttribute('aria-label', 'About ' + mod.name);
+    item.append(title, description, details, source);
     list.appendChild(item);
   });
 }

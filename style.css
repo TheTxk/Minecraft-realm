@@ -761,3 +761,13 @@ h1, h2, h3 {
 }
 
 .mod-details dd { margin: 0; font-weight: 700; }
+
+.mod-source {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-underline-offset: 4px;
+}
+.mod-source:hover { text-decoration-thickness: 2px; }
+.mod-source:focus-visible { outline: 2px solid var(--text); outline-offset: 4px; }
